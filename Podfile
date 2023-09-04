@@ -7,5 +7,8 @@ target 'MyNews' do
 
   # Pods for MyNews
    pod 'Kingfisher', '~> 7.0'
+pod 'Firebase/Core'
+pod 'Firebase/Auth'
+pod 'GoogleSignIn'  
 
 end
