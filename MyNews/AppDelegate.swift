@@ -6,14 +6,27 @@
 //
 
 import UIKit
+import Firebase
+//import FirebaseCore
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    var window: UIWindow?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        FirebaseApp.configure()
+
+//                window = UIWindow(frame: UIScreen.main.bounds)
+//                let storyboard = UIStoryboard(name: "Main", bundle: nil) // Replace "Main" with your storyboard name
+//                let loginViewController = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+//                let navigationController = UINavigationController(rootViewController: loginViewController)
+//                window?.rootViewController = navigationController
+//                window?.makeKeyAndVisible()
+        
         return true
     }
 
@@ -30,7 +43,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
-
-
+    
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+        // Handle the incoming URL with your custom scheme here
+        return Auth.auth().canHandle(url)
+    }
 }
 

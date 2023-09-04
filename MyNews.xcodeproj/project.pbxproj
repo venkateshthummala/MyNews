@@ -18,6 +18,9 @@
 		9ED5419E2AA3579D0031DE1C /* NewsListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED5419C2AA3579D0031DE1C /* NewsListTableViewCell.swift */; };
 		9ED5419F2AA3579D0031DE1C /* NewsListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9ED5419D2AA3579D0031DE1C /* NewsListTableViewCell.xib */; };
 		9ED541A12AA3607D0031DE1C /* NewsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED541A02AA3607D0031DE1C /* NewsList.swift */; };
+		9EEF24D52AA5BC1700D6D490 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEF24D42AA5BC1700D6D490 /* LoginViewController.swift */; };
+		9EEF24D72AA5D5EF00D6D490 /* VerificationCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEF24D62AA5D5EF00D6D490 /* VerificationCodeViewController.swift */; };
+		9EEF24D92AA5D97A00D6D490 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9EEF24D82AA5D97A00D6D490 /* GoogleService-Info.plist */; };
 		C6E22AE617EC39B1167A2A3A /* Pods_MyNews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9700B18DB67C9DE504FCE34B /* Pods_MyNews.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +41,9 @@
 		9ED5419C2AA3579D0031DE1C /* NewsListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListTableViewCell.swift; sourceTree = "<group>"; };
 		9ED5419D2AA3579D0031DE1C /* NewsListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsListTableViewCell.xib; sourceTree = "<group>"; };
 		9ED541A02AA3607D0031DE1C /* NewsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsList.swift; sourceTree = "<group>"; };
+		9EEF24D42AA5BC1700D6D490 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		9EEF24D62AA5D5EF00D6D490 /* VerificationCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationCodeViewController.swift; sourceTree = "<group>"; };
+		9EEF24D82AA5D97A00D6D490 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +96,7 @@
 				9ED541872AA354CD0031DE1C /* Main.storyboard */,
 				9ED5418A2AA354D60031DE1C /* Assets.xcassets */,
 				9ED5418C2AA354D60031DE1C /* LaunchScreen.storyboard */,
+				9EEF24D82AA5D97A00D6D490 /* GoogleService-Info.plist */,
 				9ED5418F2AA354D60031DE1C /* Info.plist */,
 			);
 			path = MyNews;
@@ -117,6 +124,8 @@
 			children = (
 				9ED541982AA3563C0031DE1C /* NewsHeadLinesViewController.swift */,
 				9ED5419A2AA356620031DE1C /* ParticularNewsDetailsViewController.swift */,
+				9EEF24D42AA5BC1700D6D490 /* LoginViewController.swift */,
+				9EEF24D62AA5D5EF00D6D490 /* VerificationCodeViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -127,7 +136,6 @@
 				7B3CFC19A38950B17042329B /* Pods-MyNews.debug.xcconfig */,
 				0A7DD4F83F59457B2AF78070 /* Pods-MyNews.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -191,6 +199,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EEF24D92AA5D97A00D6D490 /* GoogleService-Info.plist in Resources */,
 				9ED5418E2AA354D60031DE1C /* LaunchScreen.storyboard in Resources */,
 				9ED5418B2AA354D60031DE1C /* Assets.xcassets in Resources */,
 				9ED5419F2AA3579D0031DE1C /* NewsListTableViewCell.xib in Resources */,
@@ -250,7 +259,9 @@
 				9ED541862AA354CD0031DE1C /* ViewController.swift in Sources */,
 				9ED541822AA354CD0031DE1C /* AppDelegate.swift in Sources */,
 				9ED541A12AA3607D0031DE1C /* NewsList.swift in Sources */,
+				9EEF24D72AA5D5EF00D6D490 /* VerificationCodeViewController.swift in Sources */,
 				9ED541842AA354CD0031DE1C /* SceneDelegate.swift in Sources */,
+				9EEF24D52AA5BC1700D6D490 /* LoginViewController.swift in Sources */,
 				9ED5419B2AA356620031DE1C /* ParticularNewsDetailsViewController.swift in Sources */,
 				9ED5419E2AA3579D0031DE1C /* NewsListTableViewCell.swift in Sources */,
 				9ED541992AA3563C0031DE1C /* NewsHeadLinesViewController.swift in Sources */,
