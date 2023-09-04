@@ -8,7 +8,7 @@
 import UIKit
 import Firebase
 //import FirebaseCore
-
+import GoogleSignIn
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -19,6 +19,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         FirebaseApp.configure()
+
+       // GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
 
 //                window = UIWindow(frame: UIScreen.main.bounds)
 //                let storyboard = UIStoryboard(name: "Main", bundle: nil) // Replace "Main" with your storyboard name

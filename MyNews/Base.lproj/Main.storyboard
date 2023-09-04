@@ -235,20 +235,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UYk-RX-S5F">
-                                <rect key="frame" x="20" y="364" width="353" height="40"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="hWs-4k-6ba"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b0X-dc-eeB">
-                                <rect key="frame" x="20" y="424" width="353" height="40"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="iAS-Nv-q3X"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="rfG-jg-EH3"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -257,24 +243,19 @@
                             <constraint firstItem="rfG-jg-EH3" firstAttribute="trailing" secondItem="MHd-Is-XaI" secondAttribute="trailing" constant="20" id="4XS-SI-0OS"/>
                             <constraint firstItem="ARC-3U-cxZ" firstAttribute="centerX" secondItem="hoU-S1-jzh" secondAttribute="centerX" id="5s0-RE-MiB"/>
                             <constraint firstItem="rfG-jg-EH3" firstAttribute="trailing" secondItem="kIA-rr-tML" secondAttribute="trailing" constant="20" id="Bgn-hc-QJY"/>
-                            <constraint firstItem="UYk-RX-S5F" firstAttribute="top" secondItem="ARC-3U-cxZ" secondAttribute="bottom" constant="20" id="CAN-xG-CAC"/>
                             <constraint firstItem="1G1-nC-CVb" firstAttribute="top" secondItem="kIA-rr-tML" secondAttribute="bottom" constant="50" id="JOJ-y4-1Wq"/>
-                            <constraint firstItem="b0X-dc-eeB" firstAttribute="top" secondItem="UYk-RX-S5F" secondAttribute="bottom" constant="20" id="JsV-5E-TDf"/>
                             <constraint firstItem="rfG-jg-EH3" firstAttribute="trailing" secondItem="1G1-nC-CVb" secondAttribute="trailing" constant="20" id="QiD-lL-t2u"/>
                             <constraint firstItem="MHd-Is-XaI" firstAttribute="top" secondItem="1G1-nC-CVb" secondAttribute="bottom" constant="20" id="Txh-QG-Rcg"/>
                             <constraint firstItem="MHd-Is-XaI" firstAttribute="leading" secondItem="rfG-jg-EH3" secondAttribute="leading" constant="20" id="XOA-uN-qAy"/>
                             <constraint firstItem="1G1-nC-CVb" firstAttribute="leading" secondItem="rfG-jg-EH3" secondAttribute="leading" constant="20" id="erP-h4-0Hb"/>
-                            <constraint firstItem="b0X-dc-eeB" firstAttribute="leading" secondItem="rfG-jg-EH3" secondAttribute="leading" constant="20" id="f2z-Qk-Bqg"/>
-                            <constraint firstItem="rfG-jg-EH3" firstAttribute="trailing" secondItem="b0X-dc-eeB" secondAttribute="trailing" constant="20" id="iUl-TC-ChU"/>
-                            <constraint firstItem="rfG-jg-EH3" firstAttribute="trailing" secondItem="UYk-RX-S5F" secondAttribute="trailing" constant="20" id="qEt-47-Afi"/>
                             <constraint firstItem="kIA-rr-tML" firstAttribute="top" secondItem="rfG-jg-EH3" secondAttribute="top" constant="20" id="qyC-fW-uN5"/>
                             <constraint firstItem="ARC-3U-cxZ" firstAttribute="top" secondItem="MHd-Is-XaI" secondAttribute="bottom" constant="20" id="s49-Sd-QW3"/>
-                            <constraint firstItem="UYk-RX-S5F" firstAttribute="leading" secondItem="rfG-jg-EH3" secondAttribute="leading" constant="20" id="wdR-sg-W0w"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="qKm-AR-A1x"/>
                     <connections>
                         <outlet property="mobileNumberTextField" destination="1G1-nC-CVb" id="glk-eM-IpQ"/>
+                        <outlet property="orLabel" destination="ARC-3U-cxZ" id="38o-6S-i4K"/>
                         <outlet property="sendOtpButton" destination="MHd-Is-XaI" id="jMi-EE-QP5"/>
                     </connections>
                 </viewController>
