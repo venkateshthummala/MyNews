@@ -10,4 +10,6 @@ target 'MyNews' do
 pod 'Firebase/Core'
 pod 'Firebase/Auth'
 pod 'GoogleSignIn'  
+pod 'FirebaseFirestore'
+pod 'FirebaseMessaging'
 end

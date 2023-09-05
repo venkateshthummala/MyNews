@@ -19,6 +19,8 @@ class VerificationCodeViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.verificatiomCodeButton.layer.cornerRadius = 5
+        self.verificatiomCodeButton.clipsToBounds = true
     }
     
 

@@ -19,8 +19,10 @@ class ParticularNewsDetailsViewController: UIViewController {
     var newsImageUrl:URL!
     var titleDescription = ""
     var publishedDate = ""
+    var sourceName = ""
     @IBOutlet weak var descriptionLabel: UILabel!
     
+    @IBOutlet weak var sourceNameLabel: UILabel!
     @IBOutlet weak var totalDescriptionLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,9 +30,10 @@ class ParticularNewsDetailsViewController: UIViewController {
         // Do any additional setup after loading the view.
         self.newsPostImageView.kf.setImage(with: newsImageUrl!)
 
-        self.descriptionLabel.text! = titleDescription
-        self.totalDescriptionLabel.text! = newsDescription
-        self.publishedDateLabel.text! = publishedDate
+        self.descriptionLabel.text = titleDescription ?? ""
+        self.totalDescriptionLabel.text = newsDescription ?? ""
+        self.publishedDateLabel.text = publishedDate ?? ""
+        self.sourceNameLabel.text = sourceName ?? ""
 
 //        print(self.descriptionLabel.text!)
 //        print(self.totalDescriptionLabel.text!)

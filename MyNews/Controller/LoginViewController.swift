@@ -9,37 +9,105 @@ import UIKit
 import Firebase
 import AuthenticationServices
 import GoogleSignIn
+import GoogleUtilities
+import FirebaseCore
 
 class LoginViewController: UIViewController,ASAuthorizationControllerPresentationContextProviding{
 
     @IBOutlet weak var mobileNumberTextField: UITextField!
     
     @IBOutlet weak var sendOtpButton: UIButton!
-    let googleSignInButton = GIDSignInButton()
-    
+    @IBOutlet weak var signInButton: GIDSignInButton!
     @IBOutlet weak var orLabel: UILabel!
     
     private let AppleButton = ASAuthorizationAppleIDButton()
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Create the Sign-In with Apple button
-                
-                
-        // Do any additional setup after loading the view.
-        // Initialize Google Sign-In
+        //GIDSignIn.sharedInstance.delegate = self
+        
+       // GIDSignIn.sharedInstance.presentingViewController = self
+    
+               
         AppleButton.addTarget(self, action: #selector(handleAppleSignIn), for: .touchUpInside)
         view.addSubview(AppleButton)
+        
+        self.sendOtpButton.layer.cornerRadius = 5
+        self.sendOtpButton.clipsToBounds = true
                 
     }
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         // Set the button's frame and position it on the screen
-        AppleButton.frame = CGRect(x: 0, y: 0, width: 250, height: 40)
+//        AppleButton.frame = CGRect(x: 0, y: 0, width: 250, height: 40)
+//
+//        AppleButton.center =  view.center
+        
+        
+        AppleButton.translatesAutoresizingMaskIntoConstraints = false
 
-        AppleButton.center =  view.center
+        NSLayoutConstraint.activate([
+            AppleButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            
+            // Position the AppleButton 20 points below the sign in button
+            AppleButton.topAnchor.constraint(equalTo: signInButton.bottomAnchor, constant: 20),
+            
+                
+                // Set the top of the AppleButton equal to the bottom of 'aboveView'
+            AppleButton.topAnchor.constraint(equalTo: signInButton.bottomAnchor),
+                
+            AppleButton.widthAnchor.constraint(equalTo: signInButton.widthAnchor),
+                
+            AppleButton.heightAnchor.constraint(equalTo: signInButton.heightAnchor)
+        ])
+
         
     }
 
+    @IBAction func onTapGoogleSignInButton(_ sender: Any) {
+        
+        
+        guard let clientID = FirebaseApp.app()?.options.clientID else { return }
+
+        // Create Google Sign In configuration object.
+        let config = GIDConfiguration(clientID: clientID)
+        GIDSignIn.sharedInstance.configuration = config
+
+        // Start the sign in flow!
+        GIDSignIn.sharedInstance.signIn(withPresenting: self) { [unowned self] result, error in
+            guard error == nil else {
+                // ...
+                return
+            }
+            
+            guard let user = result?.user,
+                  let idToken = user.idToken?.tokenString
+            else {
+                // ...
+                return
+            }
+            
+            let credential = GoogleAuthProvider.credential(withIDToken: idToken,
+                                                           accessToken: user.accessToken.tokenString)
+            
+            // ...
+            
+            Auth.auth().signIn(with: credential) { result, error in
+                
+                // At this point, our user is signed in
+                        
+                        if let error = error {
+                            // Handle login error
+                            print("Error signing in with Firebase: \(error.localizedDescription)")
+                        } else {
+                            // Login successful, navigate to the home screen
+                            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                            if let homeViewController = storyboard.instantiateViewController(withIdentifier: "NewsHeadLinesViewController") as? NewsHeadLinesViewController {
+                                self.navigationController?.pushViewController(homeViewController, animated: true)
+                            }
+                        }
+            }
+        }
+    }
     
     @IBAction func onTapSendOtpButton(_ sender: Any) {
         
@@ -73,6 +141,7 @@ class LoginViewController: UIViewController,ASAuthorizationControllerPresentatio
            authorizationController.performRequests()
        }
     
+    
 }
 extension LoginViewController:ASAuthorizationControllerDelegate{
     
@@ -89,10 +158,7 @@ extension LoginViewController:ASAuthorizationControllerDelegate{
                 print(fullName)
                 print(email)
 
-                // Use this user information as needed.
-
-                // Perform the segue to navigate to the home screen
-               // performSegue(withIdentifier: "HomeSegue", sender: self)
+                
                 
                 let vc = self.storyboard?.instantiateViewController(withIdentifier: "NewsHeadLinesViewController")as!NewsHeadLinesViewController
                 self.navigationController?.pushViewController(vc, animated: true)
@@ -108,4 +174,6 @@ extension LoginViewController:ASAuthorizationControllerDelegate{
         // Return the window or view where you want to present the authorization controller.
         return self.view.window!
     }
+    
+
 }

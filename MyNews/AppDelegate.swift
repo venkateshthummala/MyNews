@@ -7,7 +7,7 @@
 
 import UIKit
 import Firebase
-//import FirebaseCore
+import FirebaseCore
 import GoogleSignIn
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -20,14 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         FirebaseApp.configure()
 
-       // GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
 
-//                window = UIWindow(frame: UIScreen.main.bounds)
-//                let storyboard = UIStoryboard(name: "Main", bundle: nil) // Replace "Main" with your storyboard name
-//                let loginViewController = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
-//                let navigationController = UINavigationController(rootViewController: loginViewController)
-//                window?.rootViewController = navigationController
-//                window?.makeKeyAndVisible()
         
         return true
     }
@@ -46,9 +39,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
     
-    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
-        // Handle the incoming URL with your custom scheme here
-        return Auth.auth().canHandle(url)
+//    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+//        // Handle the incoming URL with your custom scheme here
+////        if UserDefaults.standard.string(forKey: "login-by") == "Google" {
+////                    return GIDSignIn.sharedInstance().handle(url)
+////                }
+//        return Auth.auth().canHandle(url)
+//    }
+    
+    
+    func application(_ app: UIApplication,
+                     open url: URL,
+                     options: [UIApplication.OpenURLOptionsKey: Any] = [:]) -> Bool {
+      return GIDSignIn.sharedInstance.handle(url)
     }
 }
 

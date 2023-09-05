@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9EC775062AA61E3200BB36FD /* RobotoSlab-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9EC774F92AA61E3100BB36FD /* RobotoSlab-VariableFont_wght.ttf */; };
+		9EC775072AA61E3200BB36FD /* RobotoSlab-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9EC774FB2AA61E3100BB36FD /* RobotoSlab-Medium.ttf */; };
+		9EC775082AA61E3200BB36FD /* RobotoSlab-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9EC774FC2AA61E3100BB36FD /* RobotoSlab-SemiBold.ttf */; };
+		9EC775092AA61E3200BB36FD /* RobotoSlab-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9EC774FD2AA61E3100BB36FD /* RobotoSlab-ExtraBold.ttf */; };
+		9EC7750A2AA61E3200BB36FD /* RobotoSlab-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9EC774FE2AA61E3100BB36FD /* RobotoSlab-Thin.ttf */; };
+		9EC7750B2AA61E3200BB36FD /* RobotoSlab-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9EC774FF2AA61E3100BB36FD /* RobotoSlab-Black.ttf */; };
+		9EC7750C2AA61E3200BB36FD /* RobotoSlab-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9EC775002AA61E3100BB36FD /* RobotoSlab-Bold.ttf */; };
+		9EC7750D2AA61E3200BB36FD /* RobotoSlab-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9EC775012AA61E3100BB36FD /* RobotoSlab-Light.ttf */; };
+		9EC7750E2AA61E3200BB36FD /* RobotoSlab-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9EC775022AA61E3100BB36FD /* RobotoSlab-ExtraLight.ttf */; };
+		9EC7750F2AA61E3200BB36FD /* RobotoSlab-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9EC775032AA61E3100BB36FD /* RobotoSlab-Regular.ttf */; };
+		9EC775102AA61E3200BB36FD /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9EC775042AA61E3100BB36FD /* README.txt */; };
+		9EC775112AA61E3200BB36FD /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9EC775052AA61E3100BB36FD /* LICENSE.txt */; };
 		9ED541822AA354CD0031DE1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED541812AA354CD0031DE1C /* AppDelegate.swift */; };
 		9ED541842AA354CD0031DE1C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED541832AA354CD0031DE1C /* SceneDelegate.swift */; };
 		9ED541862AA354CD0031DE1C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED541852AA354CD0031DE1C /* ViewController.swift */; };
@@ -21,14 +33,23 @@
 		9EEF24D52AA5BC1700D6D490 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEF24D42AA5BC1700D6D490 /* LoginViewController.swift */; };
 		9EEF24D72AA5D5EF00D6D490 /* VerificationCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEF24D62AA5D5EF00D6D490 /* VerificationCodeViewController.swift */; };
 		9EEF24D92AA5D97A00D6D490 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9EEF24D82AA5D97A00D6D490 /* GoogleService-Info.plist */; };
-		C6E22AE617EC39B1167A2A3A /* Pods_MyNews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9700B18DB67C9DE504FCE34B /* Pods_MyNews.framework */; };
+		C85EDAF23F1E989F8B432A9E /* Pods_MyNews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A62EAFE9A40CFA22149B813E /* Pods_MyNews.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0A7DD4F83F59457B2AF78070 /* Pods-MyNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyNews.release.xcconfig"; path = "Target Support Files/Pods-MyNews/Pods-MyNews.release.xcconfig"; sourceTree = "<group>"; };
-		7B3CFC19A38950B17042329B /* Pods-MyNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyNews.debug.xcconfig"; path = "Target Support Files/Pods-MyNews/Pods-MyNews.debug.xcconfig"; sourceTree = "<group>"; };
-		9700B18DB67C9DE504FCE34B /* Pods_MyNews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyNews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EC774F62AA604F700BB36FD /* MyNews.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyNews.entitlements; sourceTree = "<group>"; };
+		9EC774F92AA61E3100BB36FD /* RobotoSlab-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoSlab-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		9EC774FB2AA61E3100BB36FD /* RobotoSlab-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoSlab-Medium.ttf"; sourceTree = "<group>"; };
+		9EC774FC2AA61E3100BB36FD /* RobotoSlab-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoSlab-SemiBold.ttf"; sourceTree = "<group>"; };
+		9EC774FD2AA61E3100BB36FD /* RobotoSlab-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoSlab-ExtraBold.ttf"; sourceTree = "<group>"; };
+		9EC774FE2AA61E3100BB36FD /* RobotoSlab-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoSlab-Thin.ttf"; sourceTree = "<group>"; };
+		9EC774FF2AA61E3100BB36FD /* RobotoSlab-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoSlab-Black.ttf"; sourceTree = "<group>"; };
+		9EC775002AA61E3100BB36FD /* RobotoSlab-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoSlab-Bold.ttf"; sourceTree = "<group>"; };
+		9EC775012AA61E3100BB36FD /* RobotoSlab-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoSlab-Light.ttf"; sourceTree = "<group>"; };
+		9EC775022AA61E3100BB36FD /* RobotoSlab-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoSlab-ExtraLight.ttf"; sourceTree = "<group>"; };
+		9EC775032AA61E3100BB36FD /* RobotoSlab-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoSlab-Regular.ttf"; sourceTree = "<group>"; };
+		9EC775042AA61E3100BB36FD /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		9EC775052AA61E3100BB36FD /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		9ED5417E2AA354CD0031DE1C /* MyNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9ED541812AA354CD0031DE1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9ED541832AA354CD0031DE1C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +66,9 @@
 		9EEF24D42AA5BC1700D6D490 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9EEF24D62AA5D5EF00D6D490 /* VerificationCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationCodeViewController.swift; sourceTree = "<group>"; };
 		9EEF24D82AA5D97A00D6D490 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A62EAFE9A40CFA22149B813E /* Pods_MyNews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyNews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D454750529FBE0F112D312ED /* Pods-MyNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyNews.release.xcconfig"; path = "Target Support Files/Pods-MyNews/Pods-MyNews.release.xcconfig"; sourceTree = "<group>"; };
+		D7D60D7A1864501842C16866 /* Pods-MyNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyNews.debug.xcconfig"; path = "Target Support Files/Pods-MyNews/Pods-MyNews.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,19 +76,46 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6E22AE617EC39B1167A2A3A /* Pods_MyNews.framework in Frameworks */,
+				C85EDAF23F1E989F8B432A9E /* Pods_MyNews.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4D0AE546526E26854FC65A24 /* Frameworks */ = {
+		9EC774F72AA61E0700BB36FD /* fonts */ = {
 			isa = PBXGroup;
 			children = (
-				9700B18DB67C9DE504FCE34B /* Pods_MyNews.framework */,
+				9EC774F82AA61E3100BB36FD /* Roboto_Slab */,
 			);
-			name = Frameworks;
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		9EC774F82AA61E3100BB36FD /* Roboto_Slab */ = {
+			isa = PBXGroup;
+			children = (
+				9EC774F92AA61E3100BB36FD /* RobotoSlab-VariableFont_wght.ttf */,
+				9EC774FA2AA61E3100BB36FD /* static */,
+				9EC775042AA61E3100BB36FD /* README.txt */,
+				9EC775052AA61E3100BB36FD /* LICENSE.txt */,
+			);
+			path = Roboto_Slab;
+			sourceTree = "<group>";
+		};
+		9EC774FA2AA61E3100BB36FD /* static */ = {
+			isa = PBXGroup;
+			children = (
+				9EC774FB2AA61E3100BB36FD /* RobotoSlab-Medium.ttf */,
+				9EC774FC2AA61E3100BB36FD /* RobotoSlab-SemiBold.ttf */,
+				9EC774FD2AA61E3100BB36FD /* RobotoSlab-ExtraBold.ttf */,
+				9EC774FE2AA61E3100BB36FD /* RobotoSlab-Thin.ttf */,
+				9EC774FF2AA61E3100BB36FD /* RobotoSlab-Black.ttf */,
+				9EC775002AA61E3100BB36FD /* RobotoSlab-Bold.ttf */,
+				9EC775012AA61E3100BB36FD /* RobotoSlab-Light.ttf */,
+				9EC775022AA61E3100BB36FD /* RobotoSlab-ExtraLight.ttf */,
+				9EC775032AA61E3100BB36FD /* RobotoSlab-Regular.ttf */,
+			);
+			path = static;
 			sourceTree = "<group>";
 		};
 		9ED541752AA354CD0031DE1C = {
@@ -73,7 +124,7 @@
 				9ED541802AA354CD0031DE1C /* MyNews */,
 				9ED5417F2AA354CD0031DE1C /* Products */,
 				CA4E1A8C9E7265D6674FAB5C /* Pods */,
-				4D0AE546526E26854FC65A24 /* Frameworks */,
+				C7C9B801AA0645CA727E901A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,6 +139,7 @@
 		9ED541802AA354CD0031DE1C /* MyNews */ = {
 			isa = PBXGroup;
 			children = (
+				9EC774F72AA61E0700BB36FD /* fonts */,
 				9EC774F62AA604F700BB36FD /* MyNews.entitlements */,
 				9ED541972AA355170031DE1C /* Controller */,
 				9ED541962AA3550F0031DE1C /* View */,
@@ -132,11 +184,19 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		C7C9B801AA0645CA727E901A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A62EAFE9A40CFA22149B813E /* Pods_MyNews.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CA4E1A8C9E7265D6674FAB5C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				7B3CFC19A38950B17042329B /* Pods-MyNews.debug.xcconfig */,
-				0A7DD4F83F59457B2AF78070 /* Pods-MyNews.release.xcconfig */,
+				D7D60D7A1864501842C16866 /* Pods-MyNews.debug.xcconfig */,
+				D454750529FBE0F112D312ED /* Pods-MyNews.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -148,11 +208,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9ED541922AA354D60031DE1C /* Build configuration list for PBXNativeTarget "MyNews" */;
 			buildPhases = (
-				C25E315AA54BF43C815FDF74 /* [CP] Check Pods Manifest.lock */,
+				839554EA0C5BFFA38493F9AA /* [CP] Check Pods Manifest.lock */,
 				9ED5417A2AA354CD0031DE1C /* Sources */,
 				9ED5417B2AA354CD0031DE1C /* Frameworks */,
 				9ED5417C2AA354CD0031DE1C /* Resources */,
-				BB496EFC293185CD6A071FF2 /* [CP] Embed Pods Frameworks */,
+				DF6A9464150BD72E907F5F8A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -201,35 +261,30 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EC775112AA61E3200BB36FD /* LICENSE.txt in Resources */,
+				9EC7750D2AA61E3200BB36FD /* RobotoSlab-Light.ttf in Resources */,
 				9EEF24D92AA5D97A00D6D490 /* GoogleService-Info.plist in Resources */,
 				9ED5418E2AA354D60031DE1C /* LaunchScreen.storyboard in Resources */,
+				9EC7750E2AA61E3200BB36FD /* RobotoSlab-ExtraLight.ttf in Resources */,
 				9ED5418B2AA354D60031DE1C /* Assets.xcassets in Resources */,
 				9ED5419F2AA3579D0031DE1C /* NewsListTableViewCell.xib in Resources */,
+				9EC775102AA61E3200BB36FD /* README.txt in Resources */,
+				9EC7750F2AA61E3200BB36FD /* RobotoSlab-Regular.ttf in Resources */,
+				9EC775062AA61E3200BB36FD /* RobotoSlab-VariableFont_wght.ttf in Resources */,
+				9EC775072AA61E3200BB36FD /* RobotoSlab-Medium.ttf in Resources */,
+				9EC7750B2AA61E3200BB36FD /* RobotoSlab-Black.ttf in Resources */,
+				9EC7750A2AA61E3200BB36FD /* RobotoSlab-Thin.ttf in Resources */,
+				9EC7750C2AA61E3200BB36FD /* RobotoSlab-Bold.ttf in Resources */,
+				9EC775082AA61E3200BB36FD /* RobotoSlab-SemiBold.ttf in Resources */,
 				9ED541892AA354CD0031DE1C /* Main.storyboard in Resources */,
+				9EC775092AA61E3200BB36FD /* RobotoSlab-ExtraBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		BB496EFC293185CD6A071FF2 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MyNews/Pods-MyNews-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MyNews/Pods-MyNews-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyNews/Pods-MyNews-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C25E315AA54BF43C815FDF74 /* [CP] Check Pods Manifest.lock */ = {
+		839554EA0C5BFFA38493F9AA /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -249,6 +304,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF6A9464150BD72E907F5F8A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyNews/Pods-MyNews-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyNews/Pods-MyNews-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyNews/Pods-MyNews-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -408,7 +480,7 @@
 		};
 		9ED541932AA354D60031DE1C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7B3CFC19A38950B17042329B /* Pods-MyNews.debug.xcconfig */;
+			baseConfigurationReference = D7D60D7A1864501842C16866 /* Pods-MyNews.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -439,7 +511,7 @@
 		};
 		9ED541942AA354D60031DE1C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0A7DD4F83F59457B2AF78070 /* Pods-MyNews.release.xcconfig */;
+			baseConfigurationReference = D454750529FBE0F112D312ED /* Pods-MyNews.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

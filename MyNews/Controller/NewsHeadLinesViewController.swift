@@ -83,7 +83,24 @@ extension NewsHeadLinesViewController:UITableViewDelegate,UITableViewDataSource{
             let article = articles[indexPath.row]
                // cell.titleLabel.text = article.title
                 cell.newsDescriptionLabel.text = article.title ?? ""
+        cell.sourceNameLabel.text = article.source.name ?? ""
         
+        
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ" // Assuming the input format is in ISO 8601
+
+        if !article.publishedAt.isEmpty {
+            if let date = dateFormatter.date(from: article.publishedAt) {
+                dateFormatter.dateFormat = "yyyy-MM-dd" // Format to display only the date portion
+                let formattedDate = dateFormatter.string(from: date)
+                cell.publishedDateAndTimeLabel.text = formattedDate
+            } else {
+                cell.publishedDateAndTimeLabel.text = "Invalid date format"
+            }
+        } else {
+            cell.publishedDateAndTimeLabel.text = "Date not available"
+        }
+       // cell.publishedDateAndTimeLabel.text = article.publishedAt ?? "''"
         
 
         DispatchQueue.main.async {
@@ -114,9 +131,27 @@ extension NewsHeadLinesViewController:UITableViewDelegate,UITableViewDataSource{
 
                     let vc = self.storyboard?.instantiateViewController(withIdentifier: "ParticularNewsDetailsViewController") as!ParticularNewsDetailsViewController
                     vc.newsImageUrl = url
-                    vc.titleDescription = self.articles[indexPath.row].title
+                    vc.titleDescription = self.articles[indexPath.row].title ?? ""
                     vc.newsDescription = self.articles[indexPath.row].description ?? ""
-                    vc.publishedDate = self.articles[indexPath.row].publishedAt
+                    vc.publishedDate = self.articles[indexPath.row].publishedAt ?? ""
+                    vc.sourceName = self.articles[indexPath.row].source.name ?? ""
+                    
+                    let article = articles[indexPath.row]
+                       
+                
+                let dateFormatter = DateFormatter()
+                dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ" // Assuming the input format is in ISO 8601
+
+                if !article.publishedAt.isEmpty {
+                    if let date = dateFormatter.date(from: article.publishedAt) {
+                        dateFormatter.dateFormat = "yyyy-MM-dd" // Format to display only the date portion
+                        let formattedDate = dateFormatter.string(from: date)
+                        vc.publishedDate = formattedDate
+                    } else {
+                        vc.publishedDate = " "
+                    }
+                } else {
+                }
                     
                     self.navigationController?.pushViewController(vc, animated: true)
 
